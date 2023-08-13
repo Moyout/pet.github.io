@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>应用</title>
+    <title>pet应用</title>
 </head>
+
 <body>
-        <img src="cr_code.png">
+
+    <div class="cr_code_div">
+        <img class="cr_code" src="cr_code.png" alt="cr_code.png">
+        <div class="android_div">
+            <img class="android_icon" src="android.jpg" alt="android.jpg">
+            <span class="android_text">Android 下载</span>
+        </div>
+
+    </div>
 
 </body>
+<style>
+    body {
+        background-color: skyblue;
+        text-align: -webkit-center;
+
+    }
+
+    .cr_code_div {
+        width: 320px;
+        height: 370px;
+        background-color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .cr_code {
+        width: 300px;
+        height: 300px;
+    }
+
+    .android_div {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 50px;
+        line-height: 50px;
+         /* text-align: center; */
+    }
+
+    .android_icon {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
+
+    .android_text {
+        height: 50px;
+        /* line-height: 50px; */
+        /* background-color: beige; */
+    }
+</style>
+
 </html>
