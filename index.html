@@ -4,60 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <title>pet应用</title>
+    <style>
+        body {
+            background-color: skyblue;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;               /* 设置为 Flexbox */
+            justify-content: center;     /* 水平居中 */
+            align-items: center;         /* 垂直居中 */
+            height: 100vh;              /* 使用视口高度，确保内容居中 */
+            overflow: hidden; 
+        }
+
+        .cr_code_div {
+            width: 320px;
+            height: 370px;
+            background-color: white;
+            text-align: center;
+            border-radius: 5px;
+            z-index: 1; 
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+        }
+
+        .cr_code {
+            width: 300px;
+            height: 300px;
+        }
+
+        .android_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            line-height: 50px;
+            margin-top: 10px; /* 增加上边距 */
+        }
+
+        .android_icon {
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+            margin-right: 10px; /* 增加图标和文字之间的间距 */
+        }
+
+        .android_text {
+            height: 50px;
+            font-weight: bold; /* 加粗文字 */
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="cr_code_div">
         <img class="cr_code" src="cr_code.png" alt="cr_code.png">
         <div class="android_div">
             <img class="android_icon" src="android.jpg" alt="android.jpg">
             <span class="android_text">Android 下载</span>
         </div>
-
     </div>
-
 </body>
-<style>
-    body {
-        background-color: skyblue;
-        text-align: -webkit-center;
-
-    }
-
-    .cr_code_div {
-        width: 320px;
-        height: 370px;
-        background-color: white;
-        text-align: center;
-        border-radius: 5px;
-    }
-
-    .cr_code {
-        width: 300px;
-        height: 300px;
-    }
-
-    .android_div {
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        height: 50px;
-        line-height: 50px;
-         /* text-align: center; */
-    }
-
-    .android_icon {
-        height: 50px;
-        width: 50px;
-        object-fit: contain;
-    }
-
-    .android_text {
-        height: 50px;
-        /* line-height: 50px; */
-        /* background-color: beige; */
-    }
-</style>
 
 </html>
